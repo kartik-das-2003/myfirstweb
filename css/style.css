@@ -1,0 +1,204 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Css Variable */
+:root{
+    --navbar-height:60px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar Logo And Image */
+#logo{
+     height: 50px;
+     margin: 10px 10px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 2px 4px;
+}
+
+/* Navigation Bar List Styling */
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5 rem;
+}
+
+#navbar ul li a{
+    color: yellow;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color:rgb(29, 240, 29);
+    color: black;
+}
+
+/* HOME STYLE= */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('ENGLISH.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top: 50px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+    animation:slider 25s infinite linear;
+}
+/* Image Sliding */
+@keyframes slider{
+    0%{ background:url('ENGLISH.jpg') no-repeat center center/cover;}
+    40%{ background:url('chagol.jpg') no-repeat center center/cover; }
+    60%{ background:url('kukur.jpg') no-repeat center center/cover; }
+    80%{  background:url('Grammar.jpg') no-repeat center center/cover;}
+}
+
+#home h1{
+    color:  white;
+    text-align: center;
+}
+/* Work Section */
+#work{
+    display: flex;
+    margin: 34px;
+}
+#work .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 3px 3px;
+    border-radius: 30px;
+    background-color: rgb(196, 196, 182);
+}
+#work .box video{
+    height: 200px;
+    margin: auto;
+    padding: 5px;
+    display: block;
+}
+#work .box p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contact Section= */
+#contact{
+    position: relative;
+    height: 300px;
+    color: beige;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.895);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Family Section */
+#family-section{
+    height: 524px;
+}
+#family{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.family-item{
+    padding: 34px;
+    border: 2px solid rgb(192, 12, 12);
+    border-radius: 30px;
+}
+#family img{
+    height: 350px;
+}
+#family-section::before{
+    content: "";
+    position: absolute;
+    background:url('../bgfm.png') no-repeat center center/cover;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Footer Section= */
+
+.adress{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.phone{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.email{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}

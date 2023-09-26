@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICTIONARY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: rgb(100, 255, 255);">
+    <nav id="navbar">
+        <div id="logo">
+          <img src="logo.png" alt="Orangepicturesstudio.com">  
+
+        </div>
+        <ul>
+            <li class="item"><a href="index1.html">INNOVATION</a></li>
+            <li class="item"><a href="index2.html">SPEELING CORRECTOR</a></li>
+            <li class="item"><a href="#dictionary">DICTIONARY</a></li>
+            <li class="item"><a href="index1.html">CONTACT</a></li>
+            <li class="item"><a href="index1.html">ABOUT US</a></li>
+        </ul>
+        <nav style="margin-left:auto">
+            <button onclick="gfg_Run1()">🔴</button>
+            <button onclick="gfg_Run2()">🟢</button>
+            <button onclick="gfg_Run3()">🟡</button>
+            <button onclick="gfg_Run4()">🔵</button>
+            <button onclick="gfg_Run5()">⚪</button>
+        </nav>
+        <script>	
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+            
+            function gfg_Run1() {
+                changeColor('#FF6306');
+            }
+            function gfg_Run2() {
+                changeColor('limegreen');
+            }
+            function gfg_Run3() {
+                changeColor('yellow');
+            }
+            function gfg_Run4() {
+                changeColor('#4CD9FF');
+            }
+            function gfg_Run5() {
+                changeColor('#FFFFFF');
+            }
+        </script>
+    </nav>
+</body>
+</html>
